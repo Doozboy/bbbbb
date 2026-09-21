@@ -128,7 +128,7 @@ function App() {
       portfolio.style.willChange = 'transform';
       gsap.to(portfolio, {
         y: () => isMobileView ? -window.innerHeight * 1.5 : -900,
-        scrollTrigger: { trigger: portfolio, start: 'top bottom', end: 'bottom top', scrub: isMobileView ? 0 : 2 },
+        scrollTrigger: { trigger: portfolio, start: 'top bottom', end: 'bottom top', scrub: isMobileView ? 1.5 : 2 },
       });
 
       ScrollTrigger.create({
